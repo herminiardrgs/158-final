@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title></title>
+  <link href="estilo.css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.colorbox.js"></script>
+  <script src="datedropper.js"></script>
+   <link rel="stylesheet" href="flexislider/flexslider.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="datedropper.css">
+  
+  <script src="jquery.flexslider.js"></script>
+
+   </head>
+  
+  <body id="">
+    <a href="imag/1.jpg">
+    <img src="imag/1.jpg" alt="1" >
+  </a>
+    <a href="imag/2.jpg">
+    <img src="imag/2.jpg" alt="2" >
+     </a>
+    <a href="imag/3.jpg">
+   <img src="imag/3.jpg" >
+    </a>
+    <br>
+    <br>
+     <form action="index.html" method="post" accept-charset="utf-8">
+
+  <input type="text" id="departure" />
+</form>
+<br>
+<button name="aaaa"  id="aaaa"> localidades</button>
+    <button name="bbbb"  id="bbbb">localidades json</button>
+     <button name="btpessoa" id="btpessoa">pessoa</button>
+   
+   <div class="result">
+   </div>
+
+    <div class="resultjson">
+   </div>
+    <div class="flexslider">
+ <ul class="slides">
+
+   
+  <div class="footer">
+    <div class="campos">
+    
+      <p>
+        Nome: <input type="text" value="Insira o seu nome">
+      </p>
+      <p>
+        Email: <input type="text" value="Insira o seu Email">
+      </p>
+       telemovel: <input type="text" value="Insira o seu telemovel">
+      </p>
+      
+      
+        <input type="submit" value="OK"/>
+      </p>
+    </div>
+  </div>  
+   <script >
+ $( "#departure" ).dateDropper({
+   format:"Y-m-d",
+   lang:"es",
+ });
+  </script>
+ <script type="text/javascript">
+  $(window).load(function() {
+    $('.flexslider').flexslider(
+{
+  randomize: true,
+}
+      );
+  });
+  
+  
+  </script>
+    <script>
+      jQuery('a').colorbox();
+    </script>
+
+  </body>
+</html>
